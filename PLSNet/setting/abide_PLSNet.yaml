@@ -1,0 +1,47 @@
+data:
+  dataset: ABIDE
+  atlas: aal_ablation_TopK
+  batch_size: 16
+  test_batch_size: 16
+  val_batch_size: 16
+  train_set: 0.7
+#  BrainGCN中val_set为0.1
+  val_set: 0.1
+  fold: 0
+#  time_seires: /data/CodeGoat24/FBNETGEN/ABIDE_pcp/abide.npy
+#  time_seires: /data/CodeGoat24/FBNETGEN_ho/ABIDE_pcp/abide.npy
+  time_seires: /data/CodeGoat24/FBNETGEN_AAL/ABIDE_pcp/abide.npy
+#  time_seires: /data/CodeGoat24/FBNETGEN_cc400/ABIDE_pcp/abide.npy
+
+
+
+
+model:
+  type: PLSNet
+  extractor_type: attention
+  embedding_size: 8
+  window_size: 4
+
+  cnn_pool_size: 16
+
+  num_gru_layers: 4
+
+  dropout: 0.5
+
+
+
+train:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  epochs: 500
+  pool_ratio: 0.7
+  optimizer: adam
+  stepsize: 200
+
+  group_loss: true
+  sparsity_loss: true
+  sparsity_loss_weight: 0.5e-4
+  log_folder: result
+  
+  # uniform or pearson
+  pure_gnn_graph: pearson
