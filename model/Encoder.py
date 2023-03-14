@@ -27,7 +27,7 @@ class FullyConnectedOutput(torch.nn.Module):
         return out
 
 
-# 注意力计算函数
+
 def attention(Q, K, V):
 
     l = Q.shape[2]
