@@ -47,7 +47,7 @@ train:
 ```
 
 # Model Zoo
-We provide models for RGTNet_AAL and RGTNet_CC200.
+We provide models for PLSNet_AAL and PLSNet_CC200.
 
 <table>
   <thead>
