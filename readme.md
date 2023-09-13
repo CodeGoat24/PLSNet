@@ -9,6 +9,8 @@ Brain function connectivity, derived from functional magnetic resonance imaging 
 
 ![PLSNet](./PLSNet.png)
 
+![Biomarkers](./Biomarkers.png)
+
 ## Dataset
 
 ### ABIDE
@@ -90,3 +92,17 @@ We provide models for PLSNet_AAL and PLSNet_CC200.
   </tbody>
 </table>
 
+# Citing
+If you use this repository in your research, consider citing it using the following Bibtex entry:
+
+```
+@article{wang2023plsnet,
+  title={PLSNet: Position-aware GCN-based autism spectrum disorder diagnosis via FC learning and ROIs sifting},
+  author={Wang, Yibin and Long, Haixia and Zhou, Qianwei and Bo, Tao and Zheng, Jianwei},
+  journal={Computers in Biology and Medicine},
+  pages={107184},
+  year={2023},
+  volume={163},
+  publisher={Elsevier}
+}
+```
